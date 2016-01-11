@@ -1,0 +1,203 @@
+<html>
+	<head>
+	<meta charset=utf-8 />
+	<title>"El Masacre se pasa a pie" Bolded Place Names</title>
+	 
+	<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no' />
+	<script src='https://api.tiles.mapbox.com/mapbox.js/v2.2.3/mapbox.js'></script>
+	<script src='animated-markers.js'></script>
+	<link href='https://api.tiles.mapbox.com/mapbox.js/v2.2.3/mapbox.css' rel='stylesheet' />
+	 
+	<style>
+	  body { margin:0; padding:0; }
+	  #map { position:absolute; top:0; bottom:0; width:100%; }
+	</style>
+	 
+	 
+	</head>
+	<body>
+	<div id='map'></div>
+	 
+	<script>
+	 
+	L.mapbox.accessToken =
+		'pk.eyJ1IjoibXllcnMxNTE1IiwiYSI6ImVTWXNlblEifQ.yfS4Pm7PRfd82LA_Guwb9g';
+		
+	var map = L.mapbox.map('map', 'myers1515.mk07cpfp').setView([19.0, -71.0], 8);
+	 
+	var myLayer = L.mapbox.featureLayer().addTo(map);
+	 
+	// The GeoJSON representing the two point features
+	var geoJson = {
+	    type: 'FeatureCollection',
+	    features: [
+	{
+	              "type": "Feature",
+	              "geometry": {
+	                "type": "Point",
+	                "coordinates": [-71.68, 19.59]
+	              },
+	              "properties": {
+	                title: "Dajabón, Dominican Republic",
+	               'marker-color': '#fc4353',
+	               'marker-size': 'large',
+	                image:  'http://s11.postimg.org/qp3tezn9v/Dajabo_n_Bolded.jpg', 
+           			description:  'Bolded 6 times in text. “También en el albergue viven los magistrados jóvenes, designados por el Gobierno desde el momento en que una ley declaró PROVINCIA a aquel territorio lejano, lleno de gloria de la historia nacional" (36).'
+	              }
+	            },
+				{
+					"type": "Feature",
+					"geometry": {
+					"type": "Point",
+					"coordinates": [-70.01, 18.48]
+				},
+				"properties": {
+				title: "Santo Domingo, Dominican Republic",
+				'marker-color': '#fc4353',
+				'marker-size': 'medium',
+				description: 'Bolded 4 times in text. Referenced by markers "Malecón" (148), "Puerta de San Diego" (148), "Las Damas" (street name, 148), and "Colegio de San Román"(16).'
+				}
+				},	   
+				{
+				"type": "Feature",
+				"geometry": {
+				"type": "Point",
+				"coordinates": [-71.76, 19.69]
+				},
+				"properties": {
+				title: "El río Masacre/Massacre River",
+				'marker-color': '#fc4353',
+				'marker-size': 'medium',
+				image:  'http://s23.postimg.org/5xbrfugiz/IMG_0359.jpg',
+				description: 'Bolded 3 times in text. Presented as "Río fronterizo" (74).'
+				}
+				},	
+			{
+				"type": "Feature",
+				"geometry": {
+				"type": "Point",
+				"coordinates": [-71.60, 19.72]
+				},
+				"properties": {
+				title: "Monte Cristi (Cristy), Dominican Republic",
+				'marker-color': '#fc4353',
+				'marker-size': 'small',
+				description: 'Bolded 1 time in text.'
+				}
+				},	
+			{
+				"type": "Feature",
+				"geometry": {
+				"type": "Point",
+				"coordinates": [-71.28, 18.69]
+				},
+				"properties": {
+				title: "Dominican Republic",
+				'marker-color': '#fc4353',		
+				'marker-size': 'small',
+				description: 'Bolded 1 time in text. “Angela Vargas…es la única persona que sabe eso de que hay una REPÚBLICA DOMINICANA. Qué es eso?...dirían los asombrados habitantes del paraje…"(65).'
+				}
+				},
+				{
+				"type": "Feature",
+				"geometry": {
+				"type": "Point",
+				"coordinates": [-71.38, 19.29]
+				},
+				"properties": {
+				title: "Santiago de la Cruz, Dominican Republic",
+				'marker-color': '#fc4353',		
+				'marker-size': 'medium',
+				description: 'Bolded 4 times in text. “Dominiquén pas vaut…Lo ha pensando siempre mientras vive como dominicano en una tierra que no es la suya. Dominiquén pas vaut…mientras servía como esclavo para el patrón mulato de SANTIAGO DE LA CRUZ, trabajando en el alambique o en el cañaveral arreando ganados hasta Puerto Plata, desde Dajabón” (60).'
+				}
+				},
+				{
+				"type": "Feature",
+				"geometry": {
+				"type": "Point",
+				"coordinates": [-71.55, 19.481]
+				},
+				"properties": {
+				title: "Partido, Dominican Republic",
+				'marker-color': '#fc4353',		
+				'marker-size': 'small',
+				description: 'Bolded 2 times in text. “Cuando el español de la Conquista de la Isla de Santo Domingo caminó por las secas tierras que fueron Provincia de Monte Cristy, fundó como buen castellano, en dos lugares que evocaban la topografía de sus tierras solares en la Península: una fundación en PARTIDO y otra en SANTIAGO DE LA CRUZ. Dos pobladillos de ESPAÑA. Todavía parecen querencias españolas. Cuando se llega a “Partido” o a “Santiago de la Cruz” se advierte de inmediato la vigencia de las cosas españolas, en pleno litoral de la frontera y pese al contacto con Haití" (89).'
+				}
+				},
+				{
+				"type": "Feature",
+				"geometry": {
+				"type": "Point",
+				"coordinates": [-71.61, 19.48]
+				},
+				"properties": {
+				title: "Loma de Cabrera, Dominican Republic",
+				'marker-color': '#fc4353',		
+				'marker-size': 'small',
+				description: 'Bolded 1 time in text.'
+				}
+				},
+				{
+				"type": "Feature",
+				"geometry": {
+				"type": "Point",
+				"coordinates": [-3.71, 40.41]
+				},
+				"properties": {
+				title: "Spain",
+				'marker-color': '#fc4353',
+				'marker-size': 'small',
+				description: 'Bolded 1 time in text.'
+				}
+				},
+			{
+	        type: 'Feature',
+	        properties: {
+	            title: 'Luagarbrekka',
+	            'marker-color': '#fc4353',
+	            'marker-size': 'small'
+	        },
+	        geometry: {
+	            type: 'Point',
+	            coordinates: []
+	        }
+	    }]
+	};
+	 
+	// Add custom popups to each using our custom feature properties
+	// Copied from this example: https://www.mapbox.com/mapbox.js/example/v1.0.0/custom-marker-tooltip/
+	myLayer.on('layeradd', function(e) {
+	    var marker = e.layer,
+	        feature = marker.feature;
+	    var properties = feature.properties
+	    // Create custom popup content
+	 
+	    var image = ''
+	    if(properties.image){
+	      image = '<img src="' + properties.image + '" width="300px" style="float: right"/>'
+	    }
+	 
+	    var description = ''
+	    if(properties.description){
+	      description = properties.description
+	    }
+	 
+	    var popupContent = '<h3>' + properties.title + ' - <a href="'+ properties.url + '">Link</a></h3>'
+	                      + image
+	                      + description
+	 
+	    // http://leafletjs.com/reference.html#popup
+	    marker.bindPopup(popupContent,{
+	        closeButton: false,
+	        minWidth: 450
+	    });
+	});
+	 
+	// Pass features and a custom factory function to the map
+	myLayer.setGeoJSON(geoJson);
+	 
+	 
+	</script>
+	</body>
+	</html>
+
